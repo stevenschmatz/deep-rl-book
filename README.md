@@ -12,6 +12,8 @@ The purpose of this book is to provide a guide to new researchers and practition
 
 _This book is a very early work in progress. If you have any suggestions, ideas, or concerns, please [let me know](https://twitter.com/stevenschmatz)!_
 
+I am keeping this free and publicly available to help accelerate the pace of RL research and implementation. **If this book helped you, please consider donating to my [Patreon page](https://www.patreon.com/stevenschmatz)!**
+
 #### Prerequisites
 
 This book assumes knowledge of deep learning and basic reinforcement learning. There are many ways to learn these two topics, but I suggest you to read the following resources first:
