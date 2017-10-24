@@ -6,7 +6,7 @@ Reinforcement learning (RL) is the study of learning intelligent _behavior_. Lea
 * Delayed credit assignment
 * Temporal correlations
 
-Deep learning brings powerful function approximation and hierarchical understanding to the state spaces encountered in reinforcement learning problems. In the past five years, huge progress has been made in bringing the best of both worlds together.
+Deep learning brings powerful function approximation and hierarchical understanding to the state spaces encountered in reinforcement learning problems. In the past five years, huge progress has been made in bringing the best of both worlds together. **It is, arguably, the closest humanity has got to achieving general AI.**
 
 The purpose of this book is to provide a guide to new researchers and practitioners interested in using deep architectures in reinforcement learning problems.
 
