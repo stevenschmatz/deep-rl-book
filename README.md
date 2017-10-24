@@ -25,7 +25,7 @@ If you enjoyed either of these books, please support the authors by purchasing t
 
 #### Book Structure
 
-1. The unique challenges of DeepRL
+1. The unique challenges of deep reinforcement learning
 2. Deep Q-Networks
 3. Actor-critic architectures
 4. Policy gradients
@@ -33,3 +33,4 @@ If you enjoyed either of these books, please support the authors by purchasing t
 6. Multi-agent RL
 7. Imitation learning
 8. Multi-task learning
+9. Inverse RL
