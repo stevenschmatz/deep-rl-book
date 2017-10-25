@@ -2,7 +2,7 @@
 
 ###### Link to the paper: [Mnih et al. (Google DeepMind)](https://www.cs.toronto.edu/~vmnih/docs/dqn.pdf) (2013), and [Mnih et al. (DeepMind)](https://www.nature.com/nature/journal/v518/n7540/full/nature14236.html) (2015)
 
-### Historical context
+### Introduction
 
 _This paper arguably launched the field of deep reinforcement learning._ The paper was published in 2013, only a year after [AlexNet](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks) brought convolutional neural networks (CNN) into the public eye after a show-stopping error rate of 15.4% on the [ImageNet ILSVRC](http://www.image-net.org/challenges/LSVRC/). The DQN paper was the first to _successfully_ bring the powerful perception of CNNs to the reinforcement learning problem.
 
@@ -16,7 +16,7 @@ Rather than finding a policy directly, we can approximate the optimal action-val
 
 **The goal of the DQN architecture is to train a network to approximate the $$Q^*$$ function.**
 
-First, we will introduce the objective function and network architecture. Then, we will discuss some of the pitfalls of the training procedure (hint: it's unstable).
+First, we will introduce the objective function and network architecture. Then, we will discuss some of the pitfalls of the training procedure (hint: it's unstable). There are many add-ons to the DQN architecture which makes it perform much better.
 
 ### The loss function
 
@@ -26,7 +26,7 @@ $$
 Q^\pi(s,a) = r + \gamma Q^\pi(s', \pi(s))
 $$
 
-However, this Bellman optimality equation only holds when $$\pi$$ has converged to the optimal policy $$\pi^*$$. Otherwise, there will be some difference between $$Q(s, a)$$ and $$\gamma Q(s', \pi(s))$$. This is known as the _temporal difference error_ $$\delta$$:
+However, this Bellman optimality equation only holds when $$\pi$$ has converged to the optimal policy $$\pi^*$$. Otherwise, there will be some difference between $$Q(s, a)$$ and $$\gamma Q(s', \pi(s))$$. Note that $$Q(s', \pi(s)) = \max_{a'} Q(s', a')$$ because $$\pi$$ is a Q-greedy policy. This difference known as the _temporal difference error_ $$\delta$$:
 
 $$
  \delta = \hat{Q}(s, a) - \left( r + \gamma \max_{a'} \hat{Q}(s', a') \right)
@@ -38,8 +38,13 @@ $$
 L(\theta) = \delta_\theta^2 = \left(\hat{Q}_\theta(s, a) - \left(r + \gamma \max_{a'} \hat{Q} (s', a')\right)\right)^2
 $$
 
-We will use this gradient to update the weights of our Q-network.
+We will use this gradient to update the weights of our $$Q$$-network, because it will drive our network weights to producing the optimal $$Q$$-function and hence the optimal policy $$\pi^*$$.
 
 ### The neural network architecture
 
 Since the function is approximating a Q function, we require that the input to the neural network be the state variables, and the output be the predicted Q-values.
+
+Due to the visual structure of the Atari Learning Environment games, the authors of the DQN paper chose to use a convolutional neural network (CNN). The CNN has the following layers:
+
+![](/assets/Screen Shot 2017-10-24 at 6.49.23 PM.png)
+
