@@ -29,7 +29,7 @@ $$
 However, this Bellman optimality equation only holds when $$\pi$$ has converged to the optimal policy $$\pi^*$$. Otherwise, there will be some difference between $$Q(s, a)$$ and $$\gamma Q(s', \pi(s))$$. This is known as the _temporal difference error_ $$\delta$$:
 
 $$
- \delta = \underbrace{\hat{Q}(s, a)}_\text{current est.} - \underbrace{\left( r + \gamma \max_{a'} \hat{Q}(s', a') \right)}_\text{one-step lookahead}
+ \delta = \hat{Q}(s, a) - \left( r + \gamma \max_{a'} \hat{Q}(s', a') \right)
 $$
 
 Our goal is to minimize this quantity. Our loss will be defined as the _squared_ temporal difference error, similar to a mean squared error metric.
