@@ -16,7 +16,7 @@ Rather than finding a policy directly, we can approximate the optimal action-val
 
 **The goal of the DQN architecture is to train a network to approximate the $$Q^*$$ function.**
 
-First, we will introduce the objective function and network architecture. Then, we will discuss some of the pitfalls of the training procedure (hint: it's unstable). There are many add-ons to the DQN architecture which makes it perform much better.
+First, we will introduce the objective function and network architecture. Then, we will discuss some of the pitfalls of the training procedure (hint: it's unstable). There are many add-ons to the DQN architecture which makes it perform much better, and we will discuss those in subsequent articles.
 
 ### The loss function
 
@@ -46,5 +46,11 @@ Since the function is approximating a Q function, we require that the input to t
 
 Due to the visual structure of the Atari Learning Environment games, the authors of the DQN paper chose to use a convolutional neural network (CNN). The CNN has the following layers:
 
-![](/assets/Screen Shot 2017-10-24 at 6.49.23 PM.png)
+| Layer type  | Details                    | Activation |
+| ----------  | -------------------------- | ---------- |
+| Input       | (84 x 84 x 4) input produced by preprocessing function $$\phi$$ | |
+| Convolution | 16 (8 x 8) filters, stride 4 | ReLU       |
+| Convolution | 32 (4 x 4) filters, stride 2 | ReLU       |
+| Dense       | 256 hidden units           | ReLU       |
+| Dense       | One output unit per action | Linear | 
 
