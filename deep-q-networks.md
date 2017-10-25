@@ -12,4 +12,8 @@ $$
 Q^\pi(s,a) = r + \gamma Q^\pi(s', \pi(s))
 $$
 
-The difference between 
+However, this Bellman optimality equation only holds when $$\pi$$ has converged. Otherwise, there will be some difference between $$Q(s, a)$$ and $$\gamma Q(s', \pi(s))$$. This is known as the _temporal difference error_ $$\delta$$:
+
+$$
+\delta = \hat{Q}(s, a) - \left( r + \gamma \max_a \hat{Q}(s', a) \right)
+$$
