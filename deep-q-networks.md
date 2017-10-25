@@ -11,3 +11,5 @@ First, we can write the Bellman optimality equation for $$Q^\pi$$:
 $$
 Q^\pi(s,a) = r + \gamma Q^\pi(s', \pi(s))
 $$
+
+The difference between 
