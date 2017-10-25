@@ -26,7 +26,7 @@ If you enjoyed either of these books, please support the authors by purchasing t
 #### Book Structure
 
 1. The unique challenges of deep reinforcement learning
-2. Deep Q-Networks
+2. [Deep Q-Networks](/deep-q-networks.md)
 3. Actor-critic architectures
 4. Policy gradients
 5. Hierarchical RL
