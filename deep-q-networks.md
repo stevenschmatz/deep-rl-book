@@ -1,6 +1,6 @@
 # Deep Q Networks (DQN)
 
-###### Link to the paper: [Mnih et al. (Google DeepMind)](https://www.cs.toronto.edu/~vmnih/docs/dqn.pdf) (2013)
+###### Link to the paper: [Mnih et al. (Google DeepMind)](https://www.cs.toronto.edu/~vmnih/docs/dqn.pdf) (2013), and [Mnih et al. (DeepMind)](https://www.nature.com/nature/journal/v518/n7540/full/nature14236.html) (2015)
 
 ### Historical context
 
