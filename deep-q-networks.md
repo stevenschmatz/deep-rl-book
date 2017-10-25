@@ -6,9 +6,11 @@
 
 _This paper arguably launched the field of deep reinforcement learning._ The paper was published in 2013, only a year after [AlexNet](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks) brought convolutional neural networks (CNN) into the public eye after a show-stopping error rate of 15.4% on the [ImageNet ILSVRC](http://www.image-net.org/challenges/LSVRC/). The DQN paper was the first to _successfully_ bring the powerful perception of CNNs to the reinforcement learning problem.
 
-This architecture was trained separately on seven games from Atari 2600 from the Arcade Learning Environment. On six of the games, it surpassed all previous approaches, and on three of them, it beat human experts. Two years later, when the DQN article was featured in the journal [Nature](https://www.nature.com/nature/journal/v518/n7540/full/nature14236.html), it achieved human performance on 49 separate games. The optimal policy was even learned: focusing fire on the side, and getting the ball stuck in the top of the screen.
+This architecture was trained separately on seven games from Atari 2600 from the Arcade Learning Environment. On six of the games, it surpassed all previous approaches, and on three of them, it beat human experts. Two years later, when the DQN article was featured in the journal [Nature](https://www.nature.com/nature/journal/v518/n7540/full/nature14236.html), **it achieved human performance on 49 separate games**. The optimal policy was even learned on Breakout, for example—focusing fire on the side, and getting the ball stuck in the top of the screen.
 
 ![](assets/1424890763-atari-google-2.gif)
+
+Since then, a lot of progress has been made, and DQN is no longer the architecture of choice for new problems. However, for the time, it was revolutionary. Google proceeded to buy DeepMind Technologies for more than $500M USD. Let's start by talking about the intuition behind DQN.
 
 ### Basic idea
 
