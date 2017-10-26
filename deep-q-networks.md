@@ -70,17 +70,18 @@ There are many ways of getting around this:
 * Use _difference frames_—subtract adjacent frames and feed that as input to the model;
 * Stack frames together to see several previous frames in the current observation.
 
+The DQN paper uses the latter technique—the last four frames are stacked together. In addition, there is some cropping work done to ensure small, square, grayscale images, although this is not strictly necessary. This produces (84 x 84 x 4) observation frames.
+
 ##### Architecture
 
 Due to the visual structure of the Atari Learning Environment games, the authors of the DQN paper chose to use a convolutional neural network (CNN). The CNN has the following layers:
 
 | Layer type  | Details                    | Activation |
 | ----------  | -------------------------- | ---------- |
-| Input       | (84 x 84 x 4) input produced by preprocessing function $$\phi$$ | |
+| Input       | (84 x 84 x 4) input produced by preprocessing | |
 | Convolution | 16 (8 x 8) filters, stride 4 | ReLU       |
 | Convolution | 32 (4 x 4) filters, stride 2 | ReLU       |
 | Dense       | 256 hidden units           | ReLU         |
-| Dense       | One output unit per action, representing the predicted Q-value | Linear | 
+| Dense (output) | One output unit per action, representing the predicted Q-value | Linear | 
 
 This model was trained with the optimizer RMSProp.
-
