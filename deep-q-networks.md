@@ -11,6 +11,7 @@ This architecture was trained separately on seven games from Atari 2600 from the
 
 {% center %}
 ![](assets/1424890763-atari-google-2.gif)
+_The DQN showing optimal strategy on Breakout—moving the ball into the top zone._
 {% endcenter %}
 
 
@@ -57,6 +58,7 @@ For most games, only providing images to the network _isn't enough._ Consider a 
 
 {% center %}
 <img src="/assets/g4tv-pong-flash-games-flash-games-break-most-addicting-flash_100857_D.jpg" align="center" style="max-width: 400px"></img>
+_Is the ball moving left or right?_
 {% endcenter %}
 
 
