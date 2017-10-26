@@ -3,10 +3,17 @@
 ## Introduction
 
 * [Introduction](README.md)
-* [Deep Q Networks](deep-q-networks.md)
-* [Hierarchical RL](chapter1.md)
 
 ## Value Optimization
 
+* [Deep Q Networks](deep-q-networks.md)
+
 ## Policy Optimization
+
+## Hierarchical RL
+
+* Introduction
+* Feudal Networks
+
+## Inverse RL
 
