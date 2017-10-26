@@ -50,7 +50,7 @@ Since the function is approximating a Q function, we require that the input to t
 
 For most games, only providing images to the network _isn't enough._ Consider a simple game of Pong. A single frame is not enough information to determine the optimal action. Even though we know the ball position, we don't know the _velocity_.
 
-![](/assets/g4tv-pong-flash-games-flash-games-break-most-addicting-flash_100857_D.jpg)
+<img src="/assets/g4tv-pong-flash-games-flash-games-break-most-addicting-flash_100857_D.jpg" align="center"/>
 
 There are many ways of getting around this:
 

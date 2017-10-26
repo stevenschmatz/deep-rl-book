@@ -25,12 +25,11 @@ If you enjoyed either of these books, please support the authors by purchasing t
 
 #### Book Structure
 
-1. The unique challenges of deep reinforcement learning
-2. [Deep Q-Networks](/deep-q-networks.md)
-3. Actor-critic architectures
-4. Policy gradients
-5. Hierarchical RL
-6. Multi-agent RL
-7. Imitation learning
-8. Multi-task learning
-9. Inverse RL
+The structure of this book is split up into two main sections:
+
+* **Unique challenges** of deep reinforcement learning
+* **Value optimization**: learning value and action-value functions, which are then used to predict a reward;
+* **Policy optimization**: directly optimizing the policy, using the gradient of expected discounted reward.
+* **Special topics**, which include hierarchical RL, multi-agent RL, imitation learning, multi-task learning, inverse RL, etc.
+
+[![](/assets/algorithms.png)](https://github.com/NervanaSystems/coach)
