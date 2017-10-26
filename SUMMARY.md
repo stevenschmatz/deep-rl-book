@@ -7,6 +7,7 @@
 ## Value Optimization
 
 * [Deep Q Networks](deep-q-networks.md)
+* [Double DQN](double-dqn.md)
 
 ## Policy Optimization
 
