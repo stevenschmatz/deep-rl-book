@@ -24,7 +24,7 @@
 
 ## Policy Search
 
-* Introduction to Policy Optimization
+* Introduction to Policy Gradients
 * The REINFORCE gradient estimator
 * Distributed learning: Gorila
 
@@ -35,7 +35,8 @@
 
 ## Hierarchical RL
 
-* Introduction
+* [Introduction to Hierarchical Deep RL](hierarchical-rl/introduction.md)
+* Hierarchical DQN
 * Feudal Networks
 
 ## Inverse RL
