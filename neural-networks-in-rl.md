@@ -14,7 +14,7 @@ These methods have some nice convergence properties. For example, tabular backup
 All of these methods rely on some form of *back-up*—an estimation of a value for a given state to another “backed-up” estimate for that state.
 
 | Method | Backup |
-| ———— | ———- |
+| ------ | ------ |
 | Monte Carlo simulation | $S_t \gets G_t$ |
 | TD(0) | $S_t \gets R_{t+1} + \gamma \hat{v} (S_{t+1}, \theta_t)$ |
 | $n$-step backup | $S_t \gets G_t^{(n)}$ |
