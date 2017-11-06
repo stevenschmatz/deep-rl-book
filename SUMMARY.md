@@ -10,10 +10,10 @@
 * [Challenges of Deep RL](value-optimization.md)
 * [Landscape of methods](landscape-of-deep-rl-methods.md)
 
-## Value Function Estimation
+## Value-Based Methods
 
 * [Value Function Estimation](introduction-to-value-optimization.md)
-* Action-Value Function Estimation
+* [Action-Value Function Estimation](action-value-function-estimation.md)
 * [Neural-fitted Q iteration \(NFQ\)](introduction-to-value-optimization/neural-fitted-q-iteration.md)
 * [Deep Q Networks \(DQN\)](deep-q-networks.md)
 * [DQN Extensions](dqn-variants.md)
