@@ -1,5 +1,4 @@
-#
-Value-function estimation
+# Value-function estimation
 
 Consider the problem of determining a value function with function approximation. In the tabular case, we could use back-ups to compute our value function exactly. For function approximation, we must choose a gradient of the state or state-action pair which moves us in a direction towards optimality.
 
@@ -11,7 +10,9 @@ The solution is actually quite simple. Rather than performing a backup—where w
 
 If we knew the optimal value function, we could simply move the weights in a direction towards the local optimum of the error estimation.
 
-$$$\theta_{t+1} \gets \theta_t + \alpha \left \lbrac v_\pi(S_t) - \hat{v}(S_t | \theta_t) \right \rbrac \nabla \hat{v} (S_t | \theta_t)$$$
+$$
+\theta_{t+1} \gets \theta_t + \alpha \left[ v_\pi(S_t) - \hat{v}(S_t | \theta_t) \right] \nabla \hat{v} (S_t | \theta_t)
+$$
 
 Note that this is the gradient of the mean squared value error:
 
@@ -19,7 +20,7 @@ $$
 \sum_{s \in \mathcal{S}} d(s) \left[ v_\pi(s) - \hat{v}(s | \theta)\right]^2
 $$
 
-However, since $$v_\pi$$ is not known, we must substitute in some **estimate** $$\mathbb{E} \lbrac U_t \rbrac \approx v_\pi $$ which is preferably unbiased. These estimates can be found in the backup equations of tabular, dynamic programming RL methods like TD($$\lambda$$) or Monte Carlo. Some examples of possible $$U_t$$ values are listed:
+However, since $$v_\pi$$ is not known, we must substitute in some **estimate** $$\mathbb{E} \left[ U_t \right] \approx v_\pi $$ which is preferably unbiased. These estimates can be found in the backup equations of tabular, dynamic programming RL methods like TD($$\lambda$$) or Monte Carlo. Some examples of possible $$U_t$$ values are listed:
 
 | Loss function | $$U_t$$ value | Parameter update step expression | Biased? |
 | --- | --- | --- | --- |

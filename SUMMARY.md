@@ -12,7 +12,8 @@
 
 ## Value Function Estimation
 
-* [Introduction](introduction-to-value-optimization.md)
+* [Value Function Estimation](introduction-to-value-optimization.md)
+* Action-Value Function Estimation
 * [Neural-fitted Q iteration \(NFQ\)](introduction-to-value-optimization/neural-fitted-q-iteration.md)
 * [Deep Q Networks \(DQN\)](deep-q-networks.md)
 * [DQN Extensions](dqn-variants.md)
