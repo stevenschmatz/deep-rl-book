@@ -21,7 +21,7 @@ This algorithm is known as *episodic semi-gradient one-step SARSA*, and it would
 And of course, there is also an analogue for $$n$$-step SARSA as well:
 
 $$
-G_t^{(n)} \gets R_{t+1} + \gamma R_{t+2} + \dots + \gamma^{n-1}R_{t+n} + \gamma^n \hat{q}(S_{t+n}, A_{t+n}, \theta_{t+n-1})
+G_t^{(n)} \gets R_{t+1} + \gamma R_{t+2} + ... + \gamma^{n-1}R_{t+n} + \gamma^n \hat{q}(S_{t+n}, A_{t+n}, \theta_{t+n-1})
 $$
 
 $$
