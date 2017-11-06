@@ -6,8 +6,8 @@
 * [Review](recap-reinforcement-learning.md)
   * Reinforcement Learning
   * Deep Learning
-* [Deep learning for RL: Why?](neural-networks-in-rl.md)
-* [Challenges](value-optimization.md)
+* [Why is deep learning useful for RL?](neural-networks-in-rl.md)
+* [Challenges of Deep RL](value-optimization.md)
 * [Landscape of methods](landscape-of-deep-rl-methods.md)
 
 ## Value Function Estimation
