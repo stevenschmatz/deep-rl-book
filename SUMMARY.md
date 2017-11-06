@@ -6,7 +6,7 @@
 * [Review](recap-reinforcement-learning.md)
   * Reinforcement Learning
   * Deep Learning
-* [Neural networks in RL](neural-networks-in-rl.md)
+* [Deep learning for RL: Why?](neural-networks-in-rl.md)
 * [Challenges](value-optimization.md)
 * [Landscape of methods](landscape-of-deep-rl-methods.md)
 
